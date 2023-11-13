@@ -6,6 +6,9 @@ import bootstrap from "bootstrap/dist/css/bootstrap.min.css?inline";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Homepage from './pages/Homepage.jsx';
+import Scarlet from './pages/Scarlet.jsx';
+import Nellie from './pages/Nellie.jsx';
+import Luna from './pages/Luna.jsx';
 
 const routes = [
   {
@@ -15,6 +18,18 @@ const routes = [
       {
         index: true,
         element: <Homepage />
+      },
+      {
+        path: '/scarlet',
+        element: <Scarlet />
+      },
+      {
+        path: '/nellie',
+        element: <Nellie />
+      },
+      {
+        path: '/luna',
+        element: <Luna />
       },
     ],
   },
